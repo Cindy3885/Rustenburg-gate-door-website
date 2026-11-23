@@ -1,5 +1,5 @@
 # Rustenburg Gate & Door
-### Website Design, Brand Identity & Digital Presence Project
+### Website Design, Brand Identity & Digital Deployment Project
 
 ## 1. Project Overview
 
@@ -10,6 +10,8 @@ The objective was to develop a clear and accessible online presence that introdu
 The project included website planning and creation, content organisation, customer journey planning and the development of two alternative logo concepts.
 
 The website was independently planned, designed and assembled using Hostinger, without AI-generated code.
+
+A saved HTML version of the website was subsequently published through GitHub Pages, making it accessible online through a public web address.
 
 ## 2. From Saved HTML File to Live Website – GitHub Pages Deployment
 
