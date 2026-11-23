@@ -48,11 +48,11 @@ These designs were developed as part of the wider digital presence project. They
 
 ### Logo Concept 1
 
-![Rustenburg Gate & Door Logo Concept 1](logo_concept_1.png)
+![Rustenburg Gate & Door Logo Concept 1](logo_concept_1.jpeg)
 
 ### Logo Concept 2
 
-![Rustenburg Gate & Door Logo Concept 2](logo_concept_2.png)
+![Rustenburg Gate & Door Logo Concept 2](logo_concept_2.jpeg)
 
 ## 4. Website Screenshots
 
