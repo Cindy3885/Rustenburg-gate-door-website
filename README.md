@@ -1,15 +1,19 @@
 # Rustenburg Gate & Door
-### Website Design & Creation Project
+### Website Design, Brand Identity & Digital Presence Project
 
 ## 1. Project Overview
 
-This project involved planning, designing and creating a professional website for a fictional gate and garage door business based in Rustenburg, South Africa.
+This project involved planning, designing and creating a professional digital presence for a fictional gate, garage door and electric fencing business based in Rustenburg, South Africa.
 
-The objective was to create a clear and accessible online presence that introduces the business, communicates its services, explains the customer process and provides convenient ways for potential customers to make enquiries.
+The objective was to develop a clear and accessible online presence that introduces the business, communicates its services, explains the customer process and provides convenient ways for potential customers to make enquiries.
+
+The project included website planning and creation, content organisation, customer journey planning and the development of two alternative logo concepts.
 
 The website was independently planned, designed and assembled using Hostinger, without AI-generated code.
 
-## 2. What I Created
+## 2. Website Design & Creation
+
+The website was designed to provide visitors with information about the business and its services while making it easy to understand the process and get in touch.
 
 The website included:
 
@@ -22,20 +26,37 @@ The website included:
 - WhatsApp chat widget
 - Mobile website layout
 
-## 3. Skills Demonstrated
+### Website Features
 
-- Website planning and structure
-- Website design and content organisation
-- Hostinger
-- Page layout and navigation
-- Customer journey planning
-- Calls to action and enquiry pathways
-- Customer communication features
+The website structure focused on:
+
+- Clear presentation of business services
+- Straightforward website navigation
+- Customer-friendly information
+- Enquiry and quotation pathways
+- Calls to action
+- Accessible customer communication
 - Desktop and mobile presentation
 
-## 4. Project Screenshots
+## 3. Brand Identity & Logo Concepts
 
-The following screenshots document the website's original desktop and mobile presentation.
+Two alternative logo concepts were independently created for the Rustenburg Gate & Door business concept.
+
+The concepts explore possible visual identities for a business operating in the gate motor, garage door and electric fencing industry.
+
+These designs were developed as part of the wider digital presence project. They were not incorporated into the website itself.
+
+### Logo Concept 1
+
+![Rustenburg Gate & Door Logo Concept 1](logo_concept_1.png)
+
+### Logo Concept 2
+
+![Rustenburg Gate & Door Logo Concept 2](logo_concept_2.png)
+
+## 4. Website Screenshots
+
+The following screenshots document the original website's desktop and mobile presentation.
 
 ### Homepage
 
@@ -60,6 +81,8 @@ The following screenshots document the website's original desktop and mobile pre
 ### Customer Communication
 
 ![WhatsApp Chat Widget](07_whatsapp%20chat%20widget.png)
+
+![Get a Quote Page](06_get%20a%20quote%20page.png)
 
 ### Mobile Website Views
 
@@ -93,26 +116,50 @@ The following screenshots document the website's original desktop and mobile pre
 
 ![Mobile View 15](08_mobile%20view_15.png)
 
-## 5. Project Status & Notes
+## 5. Skills Demonstrated
 
-- This is a fictional business concept developed as a portfolio project.
-- The original website was created using Hostinger.
+### Website & Digital Presence
+- Website planning and structure
+- Website design and creation
+- Hostinger Website Builder
+- Page layout and navigation
+- Content organisation
+- Desktop and mobile presentation
+
+### Brand Identity
+- Logo concept development
+- Visual identity exploration
+- Creative design
+
+### Customer Experience
+- Customer journey planning
+- Calls to action and enquiry pathways
+- Customer communication features
+- Website information architecture
+- Customer-focused content presentation
+
+## 6. Project Status & Notes
+
+- This is a fictional business concept developed for portfolio demonstration.
+- The website was originally created using Hostinger.
 - The original Hostinger hosting has expired, and the website administration area is no longer accessible.
-- The screenshots are retained as documentation of the original website.
-- A separate working demonstration may be explored using the saved website files, depending on file and asset availability.
+- The website screenshots are retained as documentation of the original design and presentation.
+- The two logo concepts are additional creative work developed for the same business concept.
+- The logo concepts were not incorporated into the original website.
 
-## 6. Project Details
+## 7. Project Details
 
 | Detail | Description |
 |---|---|
 | Project | Rustenburg Gate & Door |
-| Project Type | Website Design & Creation |
-| Platform | Hostinger |
-| Business Concept | Gate and garage door services |
+| Project Type | Website Design & Brand Identity |
+| Business Concept | Gate motors, garage doors and electric fencing |
 | Location | Rustenburg, South Africa |
-| Documentation | 24 website screenshots |
-| Status | Portfolio project |
+| Website Platform | Hostinger |
+| Logo Concepts | 2 |
+| Website Screenshots | 24 |
+| Project Status | Portfolio project |
 
 ---
 
-*This project demonstrates practical website planning, design, content organisation and the creation of a customer-focused digital presence.*
+*This project demonstrates practical website planning, digital presence design, brand identity exploration and the creation of customer-focused online experiences.*
