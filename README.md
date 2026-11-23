@@ -11,7 +11,37 @@ The project included website planning and creation, content organisation, custom
 
 The website was independently planned, designed and assembled using Hostinger, without AI-generated code.
 
-## 2. Website Design & Creation
+## 2. From Saved HTML File to Live Website – GitHub Pages Deployment
+
+One of the most interesting parts of this project was taking a saved HTML version of the website and turning it into a publicly accessible website using GitHub Pages.
+
+The original website was independently planned, designed and assembled using Hostinger Website Builder. I had retained a saved HTML file of the website, which provided an opportunity to explore another way of making it accessible online.
+
+Rather than simply keeping the file on my computer, I uploaded it to the existing GitHub project repository, configured the repository to use the HTML file as its homepage (`index.html`), and enabled GitHub Pages.
+
+GitHub Pages takes the HTML file stored in the repository and publishes it as a live webpage. This means that visitors can open the website through a normal web browser using a public website address, without needing access to the original website builder.
+
+### The Result
+
+The saved HTML file became a publicly accessible website:
+
+**[View the Live Rustenburg Gate & Door Website](https://cindy3885.github.io/rustenburg-gate-door-website/)**
+
+This practical exercise demonstrated how an existing website file can be taken beyond local storage and published online using GitHub's built-in hosting functionality.
+
+### What This Demonstrates
+
+- Understanding how HTML files are used to display webpages in a browser.
+- Working with GitHub repositories and file management.
+- Configuring GitHub Pages to publish a website.
+- Setting up an HTML file as the website's main homepage.
+- Turning a locally saved website file into a publicly accessible online presence.
+- Exploring practical ways to reuse existing digital assets and make them accessible online.
+
+**A small saved file, a little exploration and a practical application of GitHub Pages turned into a live website.**
+
+
+## 3. Website Design & Creation
 
 The website was designed to provide visitors with information about the business and its services while making it easy to understand the process and get in touch.
 
@@ -38,7 +68,7 @@ The website structure focused on:
 - Accessible customer communication
 - Desktop and mobile presentation
 
-## 3. Brand Identity & Logo Concepts
+## 4. Brand Identity & Logo Concepts
 
 Two alternative logo concepts were independently created for the Rustenburg Gate & Door business concept.
 
@@ -54,7 +84,7 @@ These designs were developed as part of the wider digital presence project. They
 
 ![Rustenburg Gate & Door Logo Concept 2](logo_concept_2.jpeg)
 
-## 4. Website Screenshots
+## 5. Website Screenshots
 
 The following screenshots document the original website's desktop and mobile presentation.
 
@@ -116,15 +146,26 @@ The following screenshots document the original website's desktop and mobile pre
 
 ![Mobile View 15](08_mobile%20view_15.png)
 
-## 5. Skills Demonstrated
+## 6. Skills Demonstrated
 
 ### Website & Digital Presence
 - Website planning and structure
 - Website design and creation
-- Hostinger Website Builder
+- Hostinger
 - Page layout and navigation
 - Content organisation
 - Desktop and mobile presentation
+- HTML File Handling & Website Publishing
+- GitHub Repository Management
+- GitHub Pages Configuration & Deployment
+- Website Homepage Setup (index.html)
+- Digital Presence Development
+- Brand Identity Exploration & Creative Design
+- Website Layout, User Experience & Mobile-Friendly Design
+- WhatsApp Business Integration Concept
+- Customer Enquiry & Quote Workflows
+- Practical Problem-Solving & Independent Learning
+- Exploring & Applying Digital Toos to Business Needs
 
 ### Brand Identity
 - Logo concept development
@@ -138,7 +179,7 @@ The following screenshots document the original website's desktop and mobile pre
 - Website information architecture
 - Customer-focused content presentation
 
-## 6. Project Status & Notes
+## 7. Project Status & Notes
 
 - This is a fictional business concept developed for portfolio demonstration.
 - The website was originally created using Hostinger.
@@ -147,18 +188,21 @@ The following screenshots document the original website's desktop and mobile pre
 - The two logo concepts are additional creative work developed for the same business concept.
 - The logo concepts were not incorporated into the original website.
 
-## 7. Project Details
+## 8. Project Details
 
 | Detail | Description |
 |---|---|
 | Project | Rustenburg Gate & Door |
-| Project Type | Website Design & Brand Identity |
+| Project Type | Website Design, Brand Identity & Digital Presence |
 | Business Concept | Gate motors, garage doors and electric fencing |
 | Location | Rustenburg, South Africa |
-| Website Platform | Hostinger |
-| Logo Concepts | 2 |
+| Original Website Platform | Hostinger |
+| Website Publishing| GitHub Pages |
+| Website File| HTML (index.html) |
+| Brand Identity - Logo Concepts | 2 |
 | Website Screenshots | 24 |
 | Project Status | Portfolio project |
+| Live Website | https://cindy3885.github.io/rustenburg-gate-door-website/ |
 
 ---
 
