@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gate Motor & Garage Door Repairs Rustenburg | Electric Fencing</title>
+<meta name="description" content="Fast, affordable gate motor repairs, garage door repairs and electric fencing services in Rustenburg. Same-day call-outs across Cashan, Safari Gardens, Protea Park and surrounding areas.">
+<meta name="keywords" content="gate motor repairs Rustenburg, garage door repairs Rustenburg, electric fence Rustenburg, gate motor installation Rustenburg, Centurion gate motor Rustenburg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* ── DESIGN TOKENS ─────────────────────────────────────────────────────── */
+  :root {
+    --steel:   #1C2B3A;   /* near-black steel — main dark */
+    --iron:    #263647;   /* card backgrounds */
+    --spark:   #F5A623;   /* amber spark — primary accent (security lights, warning) */
+    --spark-d: #C9861A;   /* darker spark for hover */
+    --green:   #2ECC71;   /* electric fence green */
+    --red:     #E74C3C;   /* emergency/urgent */
+    --offwhite:#F2EDE6;   /* warm off-white body bg */
+    --chalk:   #FFFFFF;
+    --mist:    #8A9BAC;   /* secondary text */
+    --border:  rgba(255,255,255,0.09);
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-body:    'Inter', sans-serif;
+    --radius: 6px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--steel);
+    background: var(--offwhite);
+  }
+
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ── STICKY TOPBAR ──────────────────────────────────────────────────────── */
+  .topbar {
+    background: var(--spark);
+    color: var(--steel);
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .topbar a {
+    color: var(--steel);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  /* ── NAVIGATION ─────────────────────────────────────────────────────────── */
+  .nav {
+    background: var(--steel);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--spark);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--spark);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .logo-icon svg { width: 20px; height: 20px; fill: var(--steel); }
+  .logo-text {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--chalk);
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .logo-text span { color: var(--spark); }
+
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--spark); }
+
+  .nav-cta {
+    background: var(--spark);
+    color: var(--steel) !important;
+    font-weight: 700 !important;
+    padding: 8px 18px;
+    border-radius: var(--radius);
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--spark-d) !important; color: var(--steel) !important; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--chalk);
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  /* ── HERO ───────────────────────────────────────────────────────────────── */
+  .hero {
+    background: var(--steel);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0 72px;
+  }
+
+  /* Steel-plate grid texture */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.025) 39px, rgba(255,255,255,0.025) 40px),
+      repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,0.025) 39px, rgba(255,255,255,0.025) 40px);
+    pointer-events: none;
+  }
+
+  /* Amber sweep */
+  .hero::after {
+    content: '';
+    position: absolute;
+    right: -120px;
+    top: -80px;
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(circle, rgba(245,166,35,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(245,166,35,0.15);
+    border: 1px solid rgba(245,166,35,0.35);
+    color: var(--spark);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--spark);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%,100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.4); }
+  }
+
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(42px, 5.5vw, 68px);
+    font-weight: 800;
+    color: var(--chalk);
+    line-height: 1.0;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--spark);
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 32px;
+    max-width: 420px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--spark);
+    color: var(--steel);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 26px;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    text-decoration: none;
+  }
+  .btn-primary:hover { background: var(--spark-d); transform: translateY(-1px); }
+  .btn-primary:active { transform: translateY(0); }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--chalk);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 13px 24px;
+    border-radius: var(--radius);
+    border: 1.5px solid rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    text-decoration: none;
+  }
+  .btn-outline:hover { border-color: var(--spark); background: rgba(245,166,35,0.08); }
+
+  /* Hero stat cards */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .stat-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--spark);
+    opacity: 0.6;
+  }
+  .stat-card.accent::before { background: var(--green); }
+  .stat-card.accent2::before { background: var(--red); }
+
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--chalk);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--mist);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  /* ── TRUST BAR ──────────────────────────────────────────────────────────── */
+  .trust-bar {
+    background: var(--spark);
+    padding: 14px 0;
+  }
+  .trust-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--steel);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .trust-item svg { width: 18px; height: 18px; fill: var(--steel); flex-shrink: 0; }
+
+  /* ── SERVICES ───────────────────────────────────────────────────────────── */
+  .services {
+    padding: 80px 0;
+    background: var(--offwhite);
+  }
+  .section-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--spark-d);
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--steel);
+    line-height: 1.0;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+  }
+  .section-sub {
+    font-size: 16px;
+    color: #55687a;
+    max-width: 520px;
+    margin-bottom: 48px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .service-card {
+    background: var(--steel);
+    border-radius: 10px;
+    padding: 32px 28px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  .service-card:hover { transform: translateY(-4px); }
+
+  .service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--spark);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .service-card:hover::after { transform: scaleX(1); }
+  .service-card.fence::after { background: var(--green); }
+
+  .svc-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(245,166,35,0.15);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .svc-icon svg { width: 24px; height: 24px; fill: var(--spark); }
+  .service-card.fence .svc-icon { background: rgba(46,204,113,0.15); }
+  .service-card.fence .svc-icon svg { fill: var(--green); }
+
+  .service-card h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--chalk);
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+  .service-card p {
+    font-size: 14px;
+    color: var(--mist);
+    line-height: 1.65;
+    margin-bottom: 20px;
+  }
+  .service-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .service-list li {
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+    padding-left: 18px;
+    position: relative;
+  }
+  .service-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--spark);
+    font-weight: 700;
+  }
+  .service-card.fence .service-list li::before { color: var(--green); }
+
+  /* ── HOW IT WORKS ───────────────────────────────────────────────────────── */
+  .how {
+    background: var(--steel);
+    padding: 80px 0;
+  }
+  .how .section-title { color: var(--chalk); }
+  .how .section-sub { color: var(--mist); }
+  .how .section-eyebrow { color: var(--spark); }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+  }
+  .steps::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: calc(12.5% + 24px);
+    right: calc(12.5% + 24px);
+    height: 2px;
+    background: rgba(245,166,35,0.25);
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 16px;
+    position: relative;
+  }
+  .step-num {
+    width: 56px;
+    height: 56px;
+    background: var(--spark);
+    color: var(--steel);
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .step h4 {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--chalk);
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+  .step p {
+    font-size: 13px;
+    color: var(--mist);
+    line-height: 1.6;
+  }
+
+  /* ── BRANDS ─────────────────────────────────────────────────────────────── */
+  .brands {
+    background: var(--offwhite);
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(28,43,58,0.1);
+  }
+  .brands .section-eyebrow { text-align: center; margin-bottom: 32px; }
+
+  .brands-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .brand-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-right: 1px solid rgba(28,43,58,0.12);
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--steel);
+  }
+  .brand-pill:last-child { border-right: none; }
+  .brand-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--spark);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── QUOTE FORM ─────────────────────────────────────────────────────────── */
+  .quote-section {
+    background: var(--steel);
+    padding: 80px 0;
+  }
+  .quote-section .section-title { color: var(--chalk); }
+  .quote-section .section-sub { color: var(--mist); }
+  .quote-section .section-eyebrow { color: var(--spark); }
+
+  .quote-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .quote-reasons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 8px;
+  }
+  .reason {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .reason-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(245,166,35,0.12);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .reason-icon svg { width: 20px; height: 20px; fill: var(--spark); }
+  .reason h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--chalk);
+    margin-bottom: 3px;
+  }
+  .reason p { font-size: 13px; color: var(--mist); }
+
+  /* Form */
+  .quote-form {
+    background: var(--iron);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 36px;
+  }
+  .form-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--chalk);
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .form-group.full { grid-column: 1 / -1; }
+  label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--mist);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  input, select, textarea {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius);
+    color: var(--chalk);
+    font-family: var(--font-body);
+    font-size: 15px;
+    padding: 11px 14px;
+    width: 100%;
+    transition: border-color 0.2s;
+    outline: none;
+    -webkit-appearance: none;
+  }
+  input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.25); }
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--spark);
+    background: rgba(245,166,35,0.06);
+  }
+  select option { background: var(--iron); color: var(--chalk); }
+  textarea { resize: vertical; min-height: 90px; }
+
+  .form-submit {
+    width: 100%;
+    background: var(--spark);
+    color: var(--steel);
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 16px;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 8px;
+  }
+  .form-submit:hover { background: var(--spark-d); transform: translateY(-1px); }
+  .form-submit:active { transform: translateY(0); }
+
+  .form-note {
+    text-align: center;
+    font-size: 12px;
+    color: var(--mist);
+    margin-top: 12px;
+  }
+
+  /* ── AREAS ──────────────────────────────────────────────────────────────── */
+  .areas {
+    background: var(--offwhite);
+    padding: 80px 0;
+  }
+  .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+  }
+  .area-tag {
+    background: var(--chalk);
+    border: 1px solid rgba(28,43,58,0.12);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--steel);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .area-tag::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--spark);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── TESTIMONIALS ───────────────────────────────────────────────────────── */
+  .testimonials {
+    background: var(--steel);
+    padding: 80px 0;
+  }
+  .testimonials .section-title { color: var(--chalk); }
+  .testimonials .section-eyebrow { color: var(--spark); }
+
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+  }
+  .testi-card {
+    background: var(--iron);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+    position: relative;
+  }
+  .stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 14px;
+  }
+  .star {
+    width: 14px;
+    height: 14px;
+    background: var(--spark);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  .testi-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .testi-text::before { content: '\201C'; }
+  .testi-text::after  { content: '\201D'; }
+  .testi-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .testi-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(245,166,35,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--spark);
+    flex-shrink: 0;
+  }
+  .testi-name { font-size: 14px; font-weight: 600; color: var(--chalk); }
+  .testi-loc  { font-size: 12px; color: var(--mist); }
+
+  /* ── FAQ ────────────────────────────────────────────────────────────────── */
+  .faq {
+    background: var(--offwhite);
+    padding: 80px 0;
+  }
+  .faq-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .faq-item {
+    border-bottom: 1px solid rgba(28,43,58,0.1);
+  }
+  .faq-q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--steel);
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+  }
+  .faq-q:hover { color: var(--spark-d); }
+  .faq-arrow {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--spark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+  }
+  .faq-arrow svg { width: 10px; height: 10px; fill: var(--steel); }
+  .faq-item.open .faq-arrow { transform: rotate(45deg); }
+  .faq-a {
+    font-size: 14px;
+    color: #55687a;
+    line-height: 1.7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.2s;
+  }
+  .faq-item.open .faq-a {
+    max-height: 300px;
+    padding-bottom: 18px;
+  }
+
+  /* ── EMERGENCY BANNER ───────────────────────────────────────────────────── */
+  .emergency {
+    background: var(--red);
+    padding: 32px 0;
+  }
+  .emergency-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .emergency h2 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--chalk);
+    letter-spacing: 0.02em;
+  }
+  .emergency p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.8);
+    margin-top: 4px;
+  }
+  .btn-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--chalk);
+    color: var(--red);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 26px;
+    border-radius: var(--radius);
+    white-space: nowrap;
+    transition: transform 0.15s;
+  }
+  .btn-white:hover { transform: scale(1.03); }
+
+  /* ── FOOTER ─────────────────────────────────────────────────────────────── */
+  .footer {
+    background: #111C26;
+    padding: 60px 0 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
+    gap: 40px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+  }
+  .footer-brand p {
+    font-size: 14px;
+    color: var(--mist);
+    line-height: 1.7;
+    margin-top: 14px;
+    max-width: 260px;
+  }
+  .footer-col h4 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--spark);
+    margin-bottom: 16px;
+  }
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-col li a {
+    font-size: 14px;
+    color: var(--mist);
+    transition: color 0.2s;
+  }
+  .footer-col li a:hover { color: var(--chalk); }
+  .footer-contact-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 14px;
+    color: var(--mist);
+    margin-bottom: 12px;
+  }
+  .footer-contact-item svg { width: 16px; height: 16px; fill: var(--spark); flex-shrink: 0; margin-top: 3px; }
+  .footer-contact-item a { color: var(--chalk); font-weight: 600; }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 13px;
+    color: var(--mist);
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* ── FLOATING WHATSAPP ──────────────────────────────────────────────────── */
+  .wa-float {
+    position: fixed;
+    bottom: 28px;
+    right: 24px;
+    z-index: 999;
+    background: #25D366;
+    color: var(--chalk);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    transition: transform 0.2s;
+    text-decoration: none;
+  }
+  .wa-float:hover { transform: scale(1.1); }
+  .wa-float svg { width: 28px; height: 28px; fill: var(--chalk); }
+
+  /* ── FORM SUCCESS ───────────────────────────────────────────────────────── */
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 32px;
+  }
+  .form-success svg { width: 56px; height: 56px; fill: var(--green); margin: 0 auto 16px; }
+  .form-success h3 { font-family: var(--font-display); font-size: 24px; font-weight: 700; text-transform: uppercase; color: var(--chalk); margin-bottom: 8px; }
+  .form-success p { font-size: 14px; color: var(--mist); }
+
+  /* ── RESPONSIVE ─────────────────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: var(--steel);
+      padding: 20px 24px;
+      gap: 18px;
+      border-top: 1px solid var(--border);
+      z-index: 99;
+    }
+    .nav { position: relative; }
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-stats { grid-template-columns: repeat(4, 1fr); }
+    .services-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .steps::before { display: none; }
+    .quote-inner { grid-template-columns: 1fr; gap: 40px; }
+    .areas-grid { grid-template-columns: repeat(2, 1fr); }
+    .testi-grid { grid-template-columns: 1fr; }
+    .faq-inner { grid-template-columns: 1fr; gap: 32px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 560px) {
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+    .form-row { grid-template-columns: 1fr; }
+    .trust-inner { gap: 20px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .brands-row { flex-direction: column; }
+    .brand-pill { border-right: none; border-bottom: 1px solid rgba(28,43,58,0.12); width: 100%; justify-content: center; }
+    .brand-pill:last-child { border-bottom: none; }
+    .steps { grid-template-columns: 1fr; }
+    .emergency-inner { flex-direction: column; align-items: flex-start; }
+    .btn-white { width: 100%; justify-content: center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-eyebrow::before { animation: none; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  🔒 Same-day call-out across Rustenburg &nbsp;|&nbsp; Call now: <a href="tel:+27141234567">014 123 4567</a> &nbsp;|&nbsp; WhatsApp: <a href="https://wa.me/27761234567">076 123 4567</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 12H5M5 12L11 6M5 12L11 18"/></svg>
+      </div>
+      <div class="logo-text">Rustenburg<br><span>Gate & Door</span></div>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#quote" class="nav-cta">Get a quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div>
+      <div class="hero-eyebrow">Rustenburg's gate &amp; door specialists</div>
+      <h1>Gate motors<br>garage doors<br>&amp; <em>electric fencing</em></h1>
+      <p class="hero-sub">Fast, professional repairs and installations across Rustenburg. We service all major brands — Centurion, GEMINI, ET, DACE and more.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.99 1.18 2 2 0 012.98 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121 14.92v2z"/></svg>
+          Get a free quote
+        </a>
+        <a href="https://wa.me/27761234567" class="btn-outline" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.99.574 3.845 1.565 5.41L2 22l4.705-1.536A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm.001 18a7.958 7.958 0 01-4.074-1.116l-.292-.174-3.028.988.91-3.012-.191-.31A7.96 7.96 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+          WhatsApp us
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-num">2hr</div>
+        <div class="stat-label">Response time</div>
+      </div>
+      <div class="stat-card accent">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Years experience</div>
+      </div>
+      <div class="stat-card accent2">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Emergency service</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">All</div>
+        <div class="stat-label">Major brands</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container trust-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      Fully insured
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Same-day call-outs
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+      12-month workmanship guarantee
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+      Transparent pricing
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <p class="section-eyebrow">What we fix &amp; install</p>
+    <h2 class="section-title">Our services</h2>
+    <p class="section-sub">Whether your gate motor has stopped working, your garage door spring has snapped, or your electric fence is tripping — we have you covered.</p>
+
+    <div class="services-grid">
+
+      <!-- Gate Motors -->
+      <div class="service-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"/></svg>
+        </div>
+        <h3>Gate motor repairs &amp; installation</h3>
+        <p>Sliding, swing, and bi-fold gate motors repaired or replaced fast. We carry spare parts for all major brands and can have your gate moving again within hours.</p>
+        <ul class="service-list">
+          <li>Centurion D5-Evo &amp; D10 Smart</li>
+          <li>ET, GEMINI &amp; DACE motors</li>
+          <li>Remote control programming</li>
+          <li>Anti-theft bracket installation</li>
+          <li>Solar gate motor systems</li>
+          <li>Motor battery replacements</li>
+        </ul>
+      </div>
+
+      <!-- Garage Doors -->
+      <div class="service-card">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        </div>
+        <h3>Garage door repairs &amp; motors</h3>
+        <p>Broken springs, snapped cables, off-track panels, and failed automation units — we fix all garage door problems the same day you call.</p>
+        <ul class="service-list">
+          <li>Torsion &amp; extension spring replacement</li>
+          <li>Roller shutter door repairs</li>
+          <li>Sectional &amp; tilting door servicing</li>
+          <li>Garage door motor replacement</li>
+          <li>Keypad &amp; remote programming</li>
+          <li>Track realignment &amp; panel repairs</li>
+        </ul>
+      </div>
+
+      <!-- Electric Fencing -->
+      <div class="service-card fence">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3>Electric fencing</h3>
+        <p>Compliant electric fence installation, fault-finding, repairs, and energiser replacements across all residential and commercial properties in Rustenburg.</p>
+        <ul class="service-list">
+          <li>New electric fence installation</li>
+          <li>Energiser fault diagnosis &amp; repair</li>
+          <li>Alarm integration</li>
+          <li>Certificate of compliance (CoC)</li>
+          <li>Maintenance contracts available</li>
+          <li>Perimeter re-stringing</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <p class="section-eyebrow">Simple &amp; stress-free</p>
+    <h2 class="section-title">How it works</h2>
+    <p class="section-sub" style="margin-bottom:56px;">Four steps from a broken gate to a working one — usually within the same day.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Contact us</h4>
+        <p>Call, WhatsApp or fill in our quick quote form. Tell us what's broken and where you are in Rustenburg.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>We assess</h4>
+        <p>A technician arrives at your property, diagnoses the fault, and gives you an upfront quote — no surprise charges.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>We fix it</h4>
+        <p>Most repairs are completed on the spot. We carry common parts and motors in our vehicles so you're not waiting days.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Guaranteed</h4>
+        <p>All work comes with a 12-month workmanship guarantee. If anything fails, we come back at no extra cost.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<div class="brands">
+  <div class="container">
+    <p class="section-eyebrow" style="text-align:center;">Brands we service &amp; install</p>
+    <div class="brands-row">
+      <div class="brand-pill"><span class="brand-dot"></span>Centurion</div>
+      <div class="brand-pill"><span class="brand-dot"></span>GEMINI</div>
+      <div class="brand-pill"><span class="brand-dot"></span>ET Systems</div>
+      <div class="brand-pill"><span class="brand-dot"></span>DACE</div>
+      <div class="brand-pill"><span class="brand-dot"></span>VANTAGE</div>
+      <div class="brand-pill"><span class="brand-dot"></span>Hansa</div>
+    </div>
+  </div>
+</div>
+
+<!-- QUOTE FORM -->
+<section class="quote-section" id="quote">
+  <div class="container">
+    <div class="quote-inner">
+      <div>
+        <p class="section-eyebrow">Free, no-obligation</p>
+        <h2 class="section-title" style="color:#fff;">Get your free quote today</h2>
+        <p class="section-sub">Tell us what you need and we'll send a technician to you — usually the same day. No call-out fee, no hidden charges.</p>
+
+        <div class="quote-reasons">
+          <div class="reason">
+            <div class="reason-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <h5>We respond within 2 hours</h5>
+              <p>Most enquiries receive a call-back within 30 minutes during business hours.</p>
+            </div>
+          </div>
+          <div class="reason">
+            <div class="reason-icon">
+              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <h5>Upfront pricing — no surprises</h5>
+              <p>You approve the quote before any work begins. We never add charges after the fact.</p>
+            </div>
+          </div>
+          <div class="reason">
+            <div class="reason-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <div>
+              <h5>Multiple payment options</h5>
+              <p>Cash, EFT or card accepted. We're registered for invoices if you need one.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-form" id="quote-form-wrap">
+        <div class="form-title">Request a free quote</div>
+        <form id="quoteForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First name</label>
+              <input type="text" id="fname" name="fname" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" name="lname" placeholder="Smith" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="076 123 4567" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email (optional)</label>
+              <input type="email" id="email" name="email" placeholder="john@email.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option>Gate motor repair</option>
+              <option>Gate motor installation</option>
+              <option>Garage door repair</option>
+              <option>Garage door motor replacement</option>
+              <option>Electric fence repair</option>
+              <option>Electric fence installation</option>
+              <option>Not sure — need assessment</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="area">Your area in Rustenburg</label>
+            <input type="text" id="area" name="area" placeholder="e.g. Cashan, Safari Gardens, Protea Park...">
+          </div>
+          <div class="form-group">
+            <label for="message">Describe the problem</label>
+            <textarea id="message" name="message" placeholder="e.g. Gate motor runs but gate doesn't move. Motor is a Centurion D5..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send my quote request →</button>
+          <p class="form-note">We'll call you back within 2 hours during business hours.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <h3>Request received!</h3>
+          <p>We'll call you back within 2 hours. For urgent issues, WhatsApp us now on <strong>076 123 4567</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="areas" id="areas">
+  <div class="container">
+    <p class="section-eyebrow">Coverage</p>
+    <h2 class="section-title">Areas we serve</h2>
+    <p class="section-sub">We cover all suburbs and surrounding areas of Rustenburg. Same-day service available across the entire region.</p>
+
+    <div class="areas-grid">
+      <div class="area-tag">Cashan</div>
+      <div class="area-tag">Safari Gardens</div>
+      <div class="area-tag">Protea Park</div>
+      <div class="area-tag">Waterfall East</div>
+      <div class="area-tag">Azalea Park</div>
+      <div class="area-tag">Rustenburg North</div>
+      <div class="area-tag">Bo-dorp</div>
+      <div class="area-tag">Tlhabane</div>
+      <div class="area-tag">Die Bult</div>
+      <div class="area-tag">Geelhoutpark</div>
+      <div class="area-tag">Meriting</div>
+      <div class="area-tag">Sunset View</div>
+      <div class="area-tag">Platinum Village</div>
+      <div class="area-tag">Cannondale</div>
+      <div class="area-tag">Brits (nearby)</div>
+      <div class="area-tag">Hartebeestpoort</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="reviews">
+  <div class="container">
+    <p class="section-eyebrow">What customers say</p>
+    <h2 class="section-title" style="color:#fff;">Reviews</h2>
+
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="testi-text">My Centurion gate motor packed up on a Friday evening. Called at 6pm, technician was here by 8pm. Replaced the board and had it running in under an hour. Brilliant service.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PV</div>
+          <div>
+            <div class="testi-name">Pieter van Niekerk</div>
+            <div class="testi-loc">Cashan, Rustenburg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="testi-text">Got my electric fence energiser replaced and they also found a short in the line I didn't even know about. Very professional, gave me a written quote before touching anything.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">TM</div>
+          <div>
+            <div class="testi-name">Thabo Molefe</div>
+            <div class="testi-loc">Protea Park, Rustenburg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+        <p class="testi-text">Garage door spring snapped and they had a replacement with them in the van. Fixed same day, no waiting for parts. Price was fair and they cleaned up after themselves.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">LB</div>
+          <div>
+            <div class="testi-name">Liezel Botha</div>
+            <div class="testi-loc">Safari Gardens, Rustenburg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container faq-inner">
+    <div>
+      <p class="section-eyebrow">Common questions</p>
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-sub">Still have questions? Call us on <strong>014 123 4567</strong> or send a WhatsApp.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How quickly can you get to me in Rustenburg?
+          <span class="faq-arrow"><svg viewBox="0 0 10 10"><path d="M5 1v8M1 5h8" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></span>
+        </button>
+        <div class="faq-a">We aim to respond within 2 hours of your call during business hours (7am–7pm Monday to Saturday). For emergencies outside these hours, WhatsApp us and we'll do our best to assist. We cover all suburbs in Rustenburg from a central location so travel time is minimal.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is there a call-out fee?
+          <span class="faq-arrow"><svg viewBox="0 0 10 10"><path d="M5 1v8M1 5h8" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></span>
+        </button>
+        <div class="faq-a">There is a standard assessment fee that covers the technician visiting your property, diagnosing the problem, and giving you a written quote. This fee is waived if you proceed with the repair. We'll confirm the exact amount when you call — no surprises.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you carry spare parts with you?
+          <span class="faq-arrow"><svg viewBox="0 0 10 10"><path d="M5 1v8M1 5h8" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></span>
+        </button>
+        <div class="faq-a">Yes. Our service vehicles are stocked with the most common parts: motor control boards, batteries, remotes, springs, cables, energisers, and sensors for all major brands. This means the majority of repairs are done in a single visit without needing to order parts.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What brands of gate motors do you work on?
+          <span class="faq-arrow"><svg viewBox="0 0 10 10"><path d="M5 1v8M1 5h8" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></span>
+        </button>
+        <div class="faq-a">We work on all major brands including Centurion (D2, D5-Evo, D10 Smart), GEMINI, ET Systems, DACE, Hansa, and VANTAGE. If your brand isn't listed, call us — chances are we've worked on it before.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do electric fences need a compliance certificate?
+          <span class="faq-arrow"><svg viewBox="0 0 10 10"><path d="M5 1v8M1 5h8" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></span>
+        </button>
+        <div class="faq-a">Yes. Under South African law (Occupational Health and Safety Act), any electric fence must have a valid Certificate of Compliance (CoC). We issue certificates for all new installations and can inspect and certify existing systems. This is also required when selling a property.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you offer maintenance contracts?
+          <span class="faq-arrow"><svg viewBox="0 0 10 10"><path d="M5 1v8M1 5h8" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></span>
+        </button>
+        <div class="faq-a">Yes, we offer annual maintenance contracts for gate motors, garage doors, and electric fences — ideal for estates, body corporates, and commercial properties. A scheduled service once or twice a year can prevent most emergency breakdowns and extend the life of your equipment.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY BANNER -->
+<div class="emergency">
+  <div class="container emergency-inner">
+    <div>
+      <h2>Gate stuck? Fence down? Call now.</h2>
+      <p>Emergency response available 7 days a week. Don't leave your property unsecured.</p>
+    </div>
+    <a href="tel:+27141234567" class="btn-white">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.99 1.18 2 2 0 012.98 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121 14.92z"/></svg>
+      014 123 4567
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="#1C2B3A"><path d="M19 12H5M5 12L11 6M5 12L11 18"/></svg>
+          </div>
+          <div class="logo-text">Rustenburg<br><span>Gate & Door</span></div>
+        </a>
+        <p>Rustenburg's trusted specialists for gate motor repairs, garage door servicing, and electric fence installations. Fast, professional, guaranteed.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Gate motor repairs</a></li>
+          <li><a href="#services">Gate motor installation</a></li>
+          <li><a href="#services">Garage door repairs</a></li>
+          <li><a href="#services">Garage door motors</a></li>
+          <li><a href="#services">Electric fence repairs</a></li>
+          <li><a href="#services">Electric fence installation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Areas</h4>
+        <ul>
+          <li><a href="#areas">Cashan</a></li>
+          <li><a href="#areas">Safari Gardens</a></li>
+          <li><a href="#areas">Protea Park</a></li>
+          <li><a href="#areas">Waterfall East</a></li>
+          <li><a href="#areas">Tlhabane</a></li>
+          <li><a href="#areas">All Rustenburg areas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact us</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <span><a href="tel:+27141234567">014 123 4567</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          <span>WhatsApp: <a href="https://wa.me/27761234567">076 123 4567</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <span>info@rustenburggatedoor.co.za</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>Rustenburg, North West, South Africa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Rustenburg Gate & Door. All rights reserved.</span>
+      <span>Gate motor repairs · Garage door repairs · Electric fencing · Rustenburg</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/27761234567" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.99.574 3.845 1.565 5.41L2 22l4.705-1.536A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.522 2 11.999 2zm.001 18a7.958 7.958 0 01-4.074-1.116l-.292-.174-3.028.988.91-3.012-.191-.31A7.96 7.96 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+</a>
+
+<script>
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // FAQ accordion
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Quote form
+  document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    this.style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+    // In production: POST form data to your backend / email handler here
+    // e.g. fetch('/api/quote', { method: 'POST', body: new FormData(this) })
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 68;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
