@@ -15,7 +15,7 @@ The website was independently planned, designed and assembled using Hostinger, w
 
 One of the most interesting parts of this project was taking a saved HTML version of the website and turning it into a publicly accessible website using GitHub Pages.
 
-The original website was independently planned, designed and assembled using Hostinger Website Builder. I had retained a saved HTML file of the website, which provided an opportunity to explore another way of making it accessible online.
+The original website was independently planned, designed and assembled using Hostinger. I had retained a saved HTML file of the website, which provided an opportunity to explore another way of making it accessible online.
 
 Rather than simply keeping the file on my computer, I uploaded it to the existing GitHub project repository, configured the repository to use the HTML file as its homepage (`index.html`), and enabled GitHub Pages.
 
