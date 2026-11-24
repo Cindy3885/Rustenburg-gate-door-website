@@ -27,7 +27,7 @@ GitHub Pages takes the HTML file stored in the repository and publishes it as a 
 
 The saved HTML file became a publicly accessible website:
 
-**[View the Live Rustenburg Gate & Door Website](https://cindy3885.github.io/rustenburg-gate-door-website/)**
+**[View the Live Rustenburg Gate & Door Website](https://cindy3885.github.io/Rustenburg-gate-door-website/)**
 
 This practical exercise demonstrated how an existing website file can be taken beyond local storage and published online using GitHub's built-in hosting functionality.
 
