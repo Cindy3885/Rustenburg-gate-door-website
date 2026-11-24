@@ -204,7 +204,7 @@ The following screenshots document the original website's desktop and mobile pre
 | Brand Identity - Logo Concepts | 2 |
 | Website Screenshots | 24 |
 | Project Status | Portfolio project |
-| Live Website | https://cindy3885.github.io/rustenburg-gate-door-website/ |
+| Live Website | https://cindy3885.github.io/Rustenburg-gate-door-website/ |
 
 ---
 
