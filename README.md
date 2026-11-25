@@ -70,6 +70,43 @@ The website structure focused on:
 - Accessible customer communication
 - Desktop and mobile presentation
 
+### Alternative Website Prototype
+
+An alternative website prototype developed held a collection of 20 custom Interactive Tools.
+
+The tools were industry specific relating to gate automation, electric fencing, garage doors and residential property security.
+
+The tools cover equipment selection, technical calculations, material estimation, fault diagnosis, maintenance and security assessments.
+
+#### Alternative Website Prototype Complete Tool Directory
+
+| No. | Tool | Category |
+|---|---|---|
+| 01 | Gate Motor Selector | Gate Motors |
+| 02 | Battery Backup Estimator | Gate Motors |
+| 03 | Gate Motor Fault Finder | Gate Motors |
+| 04 | Electric Fence Material Estimator | Electric Fencing |
+| 05 | Energiser Size Calculator | Electric Fencing |
+| 06 | Fence Voltage Health Check | Electric Fencing |
+| 07 | Garage Door Spring Assessment | Garage Doors |
+| 08 | Garage Door Motor Selector | Garage Doors |
+| 09 | Garage Door Fault Finder | Garage Doors |
+| 10 | Gate Rack Length Calculator | Gate Motors |
+| 11 | Fence Wire Quantity Calculator | Electric Fencing |
+| 12 | Gate Motor Lifespan Estimator | Gate Motors |
+| 13 | Load Shedding Readiness Score | General |
+| 14 | Remote Signal Diagnostic | Gate Motors |
+| 15 | Fence CoC Status Checker | Electric Fencing |
+| 16 | Gate Opening Speed Calculator | Gate Motors |
+| 17 | Fence Post Spacing Calculator | Electric Fencing |
+| 18 | Property Security Risk Assessment | General |
+| 19 | Monthly Maintenance Checklist | General |
+| 20 | Battery Fault Finder | General |
+
+**View and try the tools now:**
+
+[![Open Tools](https://img.shields.io/badge/OPEN-20%20INTERACTIVE%20TOOLS-2ea44f?style=for-the-badge)](https://cindy3885.github.io/Custom_Industry_Tools/)
+
 ## 4. Brand Identity & Logo Concepts
 
 Two alternative logo concepts were independently created for the Rustenburg Gate & Door business concept.
